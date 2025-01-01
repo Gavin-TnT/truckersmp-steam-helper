@@ -2,7 +2,7 @@
   <div class="profile_customization_header">
     <span {{#if timeout}}data-tooltip-html="Cached until {{ timeout }}"{{/if}}><img src="{{ iconURL }}" width="16px" alt="Logo"> TruckersMP Info</span>
     {{#if banned}}
-      <span class="tmp_banned" {{#if bannedUntil}}data-tooltip-html="Until {{ bannedUntil }}"{{/if}}>Banned{{#unless bannedUntil}} permanently!{{/unless}}</span>
+      <span class="tmp_banned" {{#if bannedUntil}}data-tooltip-html="Until {{ bannedUntil }}"{{/if}}>Banned{{#unless bannedUntil}}{{/unless}}</span>
     {{/if}}
   </div>
 
